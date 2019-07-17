@@ -1,0 +1,30 @@
+<div id="pricing" class="pricing-section text-center">
+	<div class="container">
+	  <div class="col-md-12 col-sm-12 nopadding">
+		<div class="pricing-intro">
+		  <h1 class="wow fadeInUp" data-wow-delay="0s">{{ page.pricing.title }}</h1>
+		  <p class="wow fadeInUp" data-wow-delay="0.2s">{{ page.pricing.text }} </p>
+		</div>
+		{% for item in page.pricing.plans %}			
+			<div class="col-sm-4">
+			  <div class="table-left wow fadeInUp" data-wow-delay="0.4s">
+				<div class="icon">
+				  <img src="{{ item.image }}" alt="Icon" />
+				</div>
+				<div class="pricing-details">
+				  <h2>{{ item.plan }}</h2>
+				  <span>{{ item.rate }}</span>
+				  <p> {{ item.info }} </p>
+				  <ul>
+					{% for featureList in item.features %}	
+						<li>{{ featureList.feature }}</li>
+					{% endfor %}
+				  </ul>
+				  <button class="btn btn-primary btn-action btn-fill">{{ item.buttonText }}</button>
+				</div>
+			  </div>
+			</div>
+		{% endfor %}
+	  </div>
+	</div>
+</div>

@@ -1,0 +1,43 @@
+ <!-- Footer Section -->
+        <div class="footer">
+          <div class="container">
+            <div class="col-md-6">
+                <img class="img-circle" src="{{ site.data.footer.left.logo}}" width="80" height="30" alt="Image" />
+                <p>{{ site.data.footer.left.about}}</p>
+
+              <div class="footer-text">
+                <p>{{ site.data.footer.left.copyright}}</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div id="contact" class="contact text-center">
+                <i class="{{ site.data.footer.right.icon}}"></i>
+                <h1>{{ site.data.footer.right.heading}}</h1>
+                <p>{{ site.data.footer.right.info}}
+                </p>
+                <a href="mailto:{{ site.data.footer.right.email}}">{{ site.data.footer.right.emailText}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Scroll To Top -->
+
+          <a id="back-top" class="back-to-top page-scroll" href="#main">
+          <i class="ion-ios-arrow-thin-up"></i>
+          </a>
+
+        <!-- Scroll To Top Ends-->
+
+    </div><!-- Main Section -->
+
+</div><!-- Wrapper-->
+<!-- Jquery and Js Plugins -->
+  <script type="text/javascript" src="{{ 'assets/js/jquery-2.1.1.js' | relative_url }}"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="{{ 'assets/js/bootstrap.min.js' | relative_url }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/plugins.js' | relative_url }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/menu.js' | relative_url }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/custom.js' | relative_url }}"></script>
+  </body>
+</html>

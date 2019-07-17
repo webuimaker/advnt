@@ -1,0 +1,24 @@
+<div class="split-features">
+        <div class="col-md-6 nopadding">
+          <div class="split-image">
+            <img class="img-responsive wow fadeIn" src="{{ page.featuresSplit.image }}" alt="Image" />
+          </div>
+        </div>
+
+        <div class="col-md-6 nopadding">
+          <div class="split-content">
+            <h1 class="wow fadeInUp">{{ page.featuresSplit.title }}</h1>
+			
+            <p class="wow fadeInUp">
+              {{ page.featuresSplit.info }}
+            </p>
+			
+            <ul class="wow fadeInUp">
+				{% for item in page.featuresSplit.lists %}
+					<li>{{ item.list }}</li>
+				{% endfor %}
+            </ul>
+          </div>
+        </div>
+
+      </div>

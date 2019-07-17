@@ -1,0 +1,37 @@
+ <div class="app-features text-center">
+        <div class="container">
+          <h1 class="wow fadeInDown" data-wow-delay="0.1s">{{ page.appFeatures.title }}</h1>
+          <p class="wow fadeInDown" data-wow-delay="0.2s">{{ page.appFeatures.info }}</p>
+          <div class="col-md-4 features-left">
+            {% for item in page.appFeatures.featuresLeft %}
+				<div class="col-md-12 wow fadeInDown" data-wow-delay="0.2s">
+				  <div class="icon">
+					<i class="{{ item.icon }}"></i>
+				  </div>
+				  <div class="feature-single">
+					<h1>{{ item.heading }}</h1>
+					<p>{{ item.desc }}</p>
+				  </div>
+				</div>
+			{% endfor %}
+          </div>
+
+          <div class="col-md-4 wow fadeInDown" data-wow-delay="0.5s">
+            <img class="img-responsive" src="{{ page.appFeatures.image }}" alt="App" />
+          </div>
+
+          <div class="col-md-4 features-left">
+			{% for item in page.appFeatures.featuresRight %}
+				<div class="col-md-12 wow fadeInDown" data-wow-delay="0.2s">
+				  <div class="icon">
+					<i class="{{ item.icon }}"></i>
+				  </div>
+				  <div class="feature-single">
+					<h1>{{ item.heading }}</h1>
+					<p>{{ item.desc }}</p>
+				  </div>
+				</div>
+			{% endfor %}
+          </div>
+        </div>
+      </div>

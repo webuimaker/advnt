@@ -1,0 +1,10 @@
+left:
+ logo: "assets/logos/logo.png"
+ about: "A technology startup based somewhere in the world. <br class='hidden-xs'> making the finest bluetooth speakers ever made. <br class='hidden-xs'> You'll know our location if you really love us."
+ copyright: "Copyright © 2018 Wonop Ltd. All Rights Reserved."
+right:
+ icon: "ion-ios-chatboxes-outline"
+ heading: "Need Help ?"
+ info: "Contact our 24/7 customer support if you have any <br class='hidden-xs'> questions. We'll help you out."
+ emailText: "support@pixy.network"
+ email: "support@gmail.com"

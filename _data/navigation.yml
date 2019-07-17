@@ -1,0 +1,10 @@
+- name: Product
+  link: "#main"
+- name: Features
+  link: "#features"
+- name: Reviews
+  link: "#review-section"
+- name: Pricing
+  link: "#pricing"
+- name: Contact
+  link: "#contact"

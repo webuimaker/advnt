@@ -1,0 +1,21 @@
+<div class="pitch text-center">
+	<div class="container">
+	  <div class="pitch-intro">
+		<h1 class="wow fadeInDown" data-wow-delay="0.2s">{{ page.pitch.title }}</h1>
+		<p class="wow fadeInDown" data-wow-delay="0.2s"> {{ page.pitch.info }}</p>
+	  </div>
+	  <div class="col-md-12">
+		{% for item in page.pitch.pitchs %}
+			<div class="col-md-4 wow fadeInDown" data-wow-delay="0.2s">
+			  <div class="pitch-icon">
+				<i class="{{ item.icon }}"></i>
+			  </div>
+			  <div class="pitch-content">
+				<h1>{{ item.heading }}</h1>
+				<p>{{ item.desc }}</p>
+			  </div>
+			</div>
+		{% endfor %}
+	  </div>
+	</div>
+</div>

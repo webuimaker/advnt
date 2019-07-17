@@ -1,0 +1,13 @@
+<!-- Partner Section -->
+  <div class="client-section">
+	<div class="container text-center">
+	  <div class="clients owl-carousel owl-theme">
+		{% for item in page.clients.images %}
+			<div class="single">
+			  <img src="{{ item.image}}" alt="Image" />
+			</div>
+		{% endfor %}
+	  </div>
+	</div>
+
+  </div>
